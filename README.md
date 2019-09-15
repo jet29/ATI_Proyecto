@@ -1,2 +1,2 @@
 # ATI_Proyecto
-Proyecto deAplicaciones con la Tecnología Internet
+Proyecto de Aplicaciones con la Tecnología Internet
