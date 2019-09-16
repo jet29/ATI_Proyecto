@@ -21,182 +21,161 @@
 <body>
     <div class="wrapper">
 
-        <!-- Sidebar  -->
-
+         <!-- Sidebar  -->
+         <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>Trivi ATI</h3>
+                    <strong>TATI</strong>
+                </div>
         
-        <nav id="sidebar">
-            <div class="sidebar-header">
-                <h3>Trivi ATI</h3>
-                <strong>TATI</strong>
-            </div>
-    
-            <ul class="list-unstyled components">
-                <li class="active">
-                    <a href="#homeSubmenu" >
-                        <i class="fas fa-home"></i>
-                        Home
-                    </a>
-                    <!--
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#">Home 1</a>
-                        </li>
-                    </ul>
-                    -->
-                    
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-briefcase"></i>
-                        About
-                    </a>
-                    <a href="#pageSubmenu" >
-                        <i class="fas fa-copy"></i>
-                        Pages
-                    </a>
-                   
-                    <!-- <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <i class="fas fa-align-left"></i>
-                        <span>Toggle Sidebar</span>
-                    </button> -->
-                    <a id="sidebarCollapse" href="#">
-                        <i id="sidebar-icon" class="fas fa-angle-double-left"></i>
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="user_categories.html" >
+                            <i class="fas fa-home"></i>
+                            Inicio
+                        </a>
+                        <!--
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li>
+                                <a href="#">Home 1</a>
+                            </li>
+                        </ul>
+                        -->
                         
-                        Sidebar
-                    </a>
-                    
-                </li>
-            </ul>
-    
-        </nav>
-    
-        <!-- Page Content  -->
-        
-        
-            <div id="content">
-
-                <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-                        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-                                <!-- <button type="button" id="sidebarCollapse" class="btn btn-info">
-                                    <i class="fas fa-align-left"></i>
-                                    <span>Toggle Sidebar</span>
-                                </button> -->
-                            
-                                    
-                            <ul class="navbar-nav mr-auto">
-                            
-                                <!-- 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="//codeply.com">Codeply</a>
-                                -->
-
-                                <li class="nav-item">
-                                    <i style="color:white;" class="fas fa-user"></i>
-                                </li>
-                                
-
-                                <li class="nav-item">
-                                    <p style="color:white; padding-left: 1em; padding-top: 1em;"> NoobMaster69 </p>
-                                </li>
-
-                            </ul>
-                        </div>
-                        <div class="mx-auto my-2 order-0 order-md-1 position-relative">
-                            <a class="mx-auto" href="#">
-                            <img src="./assets/logo.svg" style="width: 60px; height:auto;">
+                    </li>
+                    <li>
+                        <a href="user_editar_perfil.html">
+                            <i class="fas fa-edit"></i>
+                            Editar Perfil
+                        </a>
+                        <a href="user_reglas.html" >
+                            <i class="fas fa-copy"></i>
+                            Reglas
+                        </a>
+                       
+                        <!-- <button type="button" id="sidebarCollapse" class="btn btn-info">
+                            <i class="fas fa-align-left"></i>
+                            <span>Toggle Sidebar</span>
+                        </button> -->
+                        <a class="sidebarCollapse" href="#" style="text-align: center;">
+                            <i id="sidebar-icon" class="fas fa-angle-double-left"
+                            ></i>
                         </a>
                         
-                    </div>
-                        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-                            <ul class="navbar-nav ml-auto">
+                    </li>
+                </ul>
+        
+            </nav>
+        
+        <!-- Page Content  -->
+        <div id="content">
 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Log Out</a>
-                                </li>
-                                
-                            </ul>
-                        </div>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                </nav>
-
-                <!-- Contenido de la pagina -->
-
-                
-
-                <div class="row">
-                    <div class="col-sm-9 ">
-                        <div style="text-align: center;">
-                            <div class="row justify-content-md-center">
-            
-                                <div class="col-md-auto">
-                                    <h2>¡Inicia Sesión en Trivi ATI!</h1>
-                                </div>
-                            </div>
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <button type="button" id="collapseButton" class="btn btn-info sidebarCollapse">
+                        <i class="fas fa-align-left"></i>
+                </button>
+                <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
                             
-                            <div class="row justify-content-md-center">
-                                <div class="col-md-auto">
-                                    <img src="./assets/logo.svg" class="img-fluid" alt="Responsive image">
-                                </div>
-                            </div>
-                            
-                            <br></br>
-            
-                            <div class="row justify-content-md-center">
-                                <form method="GET" action="./home.html" style="margin: auto;">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Log in</button>
-                                </form>
-                            </div>
-
-                        </div>
-                    </div>
                     
-                    <div class="col">
-                        <div class="card top-card">
-                            <div class="card-body">
-                                <h3 class="card-title" style="text-align: center">TOP 10 jugadores</h3>
-                                <p class="card-text">Noobmaster69 13131313</p>
-                                <p class="card-text">Noobmaster69 13131313</p>
-                                <p class="card-text">Noobmaster69 13131313</p>
-                                <p class="card-text">Noobmaster69 13131313</p>
-                                <p class="card-text">Noobmaster69 13131313</p>
-                                
-                                <a href="#" class="card-link">Ver más...</a>
+                            
+                    <ul class="navbar-nav mr-auto">
+                    
+                        <!-- 
+                        <li class="nav-item">
+                            <a class="nav-link" href="//codeply.com">Codeply</a>
+                        -->
+
+                        <li class="nav-item">
+                            <i style="color:white;" class="fas fa-user"></i>
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <p style="color:white; padding-left: 1em; padding-top: 1em;"> NoobMaster69 </p>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="mx-auto my-2 order-0 order-md-1 position-relative">
+                        <a class="mx-auto" href="user_categories.html">
+                        <img src="./assets/logo.svg" style="width: 60px; height:auto;">
+                    </a>
+                    
+                </div>
+                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="user_login.html">Log Out</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+    
+            <!-- Contenido de la pagina -->
+
+            <div class="row">
+                <div class="col-sm-9 ">
+                    <div style="text-align: center;">
+                        <div class="row justify-content-md-center">
+        
+                            <div class="col-md-auto">
+                                <h2>¡Inicia Sesión en Trivi ATI!</h1>
                             </div>
+                        </div>
+                        
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-auto">
+                                <img src="./assets/logo.svg" class="img-fluid" alt="Responsive image">
+                            </div>
+                        </div>
+                        
+                        <br></br>
+        
+                        <div class="row justify-content-md-center">
+                            <form method="GET" action="./home.html" style="margin: auto;">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Log in</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card top-card">
+                        <div class="card-body">
+                            <h3 class="card-title" style="text-align: center">TOP 10 jugadores</h3>
+                            <p class="card-text">Noobmaster69 13131313</p>
+                            <p class="card-text">Noobmaster69 13131313</p>
+                            <p class="card-text">Noobmaster69 13131313</p>
+                            <p class="card-text">Noobmaster69 13131313</p>
+                            <p class="card-text">Noobmaster69 13131313</p>
+                            
+                            <a href="#" class="card-link">Ver más...</a>
                         </div>
                     </div>
                 </div>
-            
-                
-                <!-- Contenido de la página fin -->
-                    
             </div>
+        
+            
+            <!-- Contenido de la página fin -->
+                
+        </div>
             
         
     </div>
     
-     <script type="text/javascript">
-         $(document).ready(function () {
-             $('#sidebarCollapse').on('click', function () {
-                 $('#sidebar').toggleClass('active');
-                 if($('#sidebar-icon').hasClass('fa-angle-double-right'))
-                 {
-                    $('#sidebar-icon').removeClass('fa-angle-double-right');
-                    $('#sidebar-icon').addClass('fa-angle-double-left');
-                 }else{
-                  
-                    $('#sidebar-icon').addClass('fa-angle-double-right');
-                    $('#sidebar-icon').removeClass('fa-angle-double-left');
-                 }
-             });
-         });
-     </script>
+     <!-- Script para sidebarcollapse -->
+    <script src="./js/main.js"></script>
 </body>
 </html>

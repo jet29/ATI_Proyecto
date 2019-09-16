@@ -149,7 +149,9 @@ a[aria-expanded="true"] {
 a[data-toggle="collapse"] {
     position: relative;
 }
-
+#collapseButton {
+    display: none;
+}
 .dropdown-toggle::after {
     display: block;
     position: absolute;
@@ -251,10 +253,14 @@ a.article:hover {
     #sidebar {
         margin-left: 0;
     }
-    #sidebarCollapse span {
+    .sidebarCollapse span {
         display: none;
     }
+    #collapseButton {
+        display: block;
+    }
 }
+
 .navbar{
     padding: .0rem 1rem;
 }
