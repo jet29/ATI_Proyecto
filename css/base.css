@@ -266,6 +266,10 @@ a.article:hover {
 }
 .row {
     margin-right:0px;
+    margin-left:0px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 .top-card{
     margin: 10%;
