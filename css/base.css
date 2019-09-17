@@ -274,3 +274,9 @@ a.article:hover {
 .top-card{
     margin: 10%;
 }
+nav.active .list-unstyled.components{
+    display: block
+}
+nav .list-unstyled.components{
+    display: none
+}
