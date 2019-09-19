@@ -122,7 +122,6 @@ span {
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
 }
 
 #sidebar ul li a {
@@ -259,6 +258,9 @@ a.article:hover {
     #collapseButton {
         display: block;
     }
+    nav .list-unstyled.components{
+        display: none
+    }
 }
 
 .navbar{
@@ -276,7 +278,4 @@ a.article:hover {
 }
 nav.active .list-unstyled.components{
     display: block
-}
-nav .list-unstyled.components{
-    display: none
 }

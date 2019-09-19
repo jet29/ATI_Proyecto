@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="./css/main.css"> -->
     <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/admin_question.css">
  
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -133,9 +134,115 @@
 
 
             <!-- Contenido de la pagina -->
-            <div class="row">
+            <div style="margin: 1rem;">
 
-            </div>
+                    <div class="form-categorie">
+                        <h2 style="margin-bottom: 1rem;">Agregar pregunta</h2>
+                        <form>
+                            <div class="form-group">
+                              <label for="pregunta">Pregunta</label>
+                              <input type="text" class="form-control" id="pregunta" placeholder="Pregunta">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Categoría</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Ciencia</option>
+                                    <option>Política</option>
+                                    <option>Historia</option>
+                                </select>
+                            </div>
+                    
+                            <!-- Respuestas -->
+                            <label for="respuestas">Respuestas</label>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Respuesta 1">
+                                </div>
+                                <div class="col">
+                                    <!-- <input type="text" class="form-control" placeholder="Last name"> -->
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="respuesta1" value="respuesta1">
+                                        <label class="form-check-label" for="respuesta1">Correcta</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Respuesta 2">
+                                </div>
+                                <div class="col">
+                                    <!-- <input type="text" class="form-control" placeholder="Last name"> -->
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="respuesta2" value="respuesta2">
+                                        <label class="form-check-label" for="respuesta2">Correcta</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Respuesta 3">
+                                </div>
+                                <div class="col">
+                                    <!-- <input type="text" class="form-control" placeholder="Last name"> -->
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="respuesta3" value="respuesta3">
+                                        <label class="form-check-label" for="respuesta3">Correcta</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Respuesta 4">
+                                </div>
+                                <div class="col">
+                                    <!-- <input type="text" class="form-control" placeholder="Last name"> -->
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="respuesta4" value="respuesta4">
+                                        <label class="form-check-label" for="respuesta4">Correcta</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </form>
+                    </div>
+                    <div>
+                        <h2>Lista de categorías</h2>
+                        <div class="table-responsive">
+                            <table class="table">
+                                    <thead class="thead-dark">
+                                      <tr>
+                                        
+                                        <th scope="col">Pregunta</th>
+                                        <th scope="col">Categoría</th>
+                                        <th scope="col">Respuesta 1</th>
+                                        <th scope="col">Respuesta 2</th>
+                                        <th scope="col">Respuesta 3</th>
+                                        <th scope="col">Respuesta 4</th>
+                                        <th scope="col"></th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">¿De qué color es el caballo blanco de Simón Bolívar?</th>
+                                        <td>Historia</td>
+                                        <td>Azul</td>
+                                        <td>Negro</td>
+                                        <td class="table-success">Blanco</td>
+                                        <td>Morado</td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn "><i class="fas fa-edit"></i></button>
+                                            </div>
+                                        </td>
+                                      </tr>
+                                      
+                                      
+                                    </tbody>
+                            </table>
+                        </div>
+    
+                    </div>
+                </div>
             <!-- Contenido de la página fin -->
                 
         </div>
