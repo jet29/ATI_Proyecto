@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="./css/main.css"> -->
     <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/login.css">
  
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -44,10 +45,10 @@
                         
                     </li>
                     <li>
-                        <a href="user_editar_perfil.html">
+                        <!-- <a href="user_editar_perfil.html">
                             <i class="fas fa-edit"></i>
                             Editar Perfil
-                        </a>
+                        </a> -->
                         <a href="user_reglas.html" >
                             <i class="fas fa-copy"></i>
                             Reglas
@@ -91,7 +92,7 @@
                         
 
                         <li class="nav-item">
-                            <p style="color:white; padding-left: 1em; padding-top: 1em;"> NoobMaster69 </p>
+                            <!-- <p style="color:white; padding-left: 1em; padding-top: 1em;"> NoobMaster69 </p> -->
                         </li>
 
                     </ul>
@@ -106,7 +107,7 @@
                     <ul class="navbar-nav ml-auto">
 
                         <li class="nav-item">
-                            <a class="nav-link" href="user_login.html">Log Out</a>
+                            <a class="nav-link" href="user_login.html">Login</a>
                         </li>
                         
                     </ul>
@@ -137,7 +138,7 @@
                         <br></br>
         
                         <div class="row justify-content-md-center">
-                            <form method="GET" action="./home.html" style="margin: auto;">
+                            <form method="GET" action="./user_home.html" style="margin: auto;">
                                 <div class="form-group">
                                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                                 </div>
@@ -146,6 +147,13 @@
                                 </div>
                                 <button type="submit" class="btn btn-primary">Log in</button>
                             </form>
+                        </div>
+                        <button class="btn  btn-primary" style="margin-top:.5rem; border-color:#3B5998;background-color: #3B5998"><img src="./assets/facebook-logo.svg" alt="" style="width: 20px; "> Iniciar sesión con Facebook</button>
+                        <br>
+                        <button class="btn  btn-primary" style="margin-top:.5rem; border-color:#00acee;background-color: #00acee"><img src="./assets/twitter.svg" alt="" style="width: 20px; "> Iniciar sesión con Twitter</button>
+                        <div style="margin-top:.5rem;">
+                            <a class="link-login" href="./user_olvido_contraseña.html">¿Olvidaste contraseña?</a>
+
                         </div>
 
                     </div>
