@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="./css/main.css"> -->
     <link rel="stylesheet" href="./css/base.css">
- 
+    <link rel="stylesheet" href="./css/admin_premio_instantaneo.css">
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
@@ -134,7 +135,66 @@
 
             <!-- Contenido de la pagina -->
             <div class="row">
-
+                <div>
+                    <h2 style="margin-bottom: 18px;">Agregar Premio Instantaneo</h2>
+                    <form>
+                        <div class="form-row" style="margin-bottom: 18px;">
+                            <div class="col-8">
+                                <label for="nombreCategoria">Nombre del premio</label>
+                                <input type="text" class="form-control" id="nombreCategoria" placeholder="Nombre">
+                            </div>
+                            <div class="col-2">
+                                <label for="nombreCategoria">Candita</label>
+                                <input type="number" class="form-control" id="nombreCategoria" placeholder="1">
+                            </div>
+                        </div>
+                        <div class="form-row" style="margin-bottom: 18px;">
+                            <div class="col-8">
+                                <label for="nombreCategoria">Fecha de Premiacion</label>
+                                <input type="Date" class="form-control" id="nombreCategoria" placeholder="Nombre">
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin: 10px;">
+                                <label for="imagenCategoria">Imagen</label>
+                                <input type="file" class="form-control-file" id="imagenCategoria">
+                        </div>
+                        <div class="text-right" style="margin: 18px;">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="table-responsive">
+                        <table class="table center-table">
+                                <thead class="thead-dark">
+                                  <tr>
+                                    <th scope="col" class="text-center">Cantidad</th>
+                                    <th scope="col" class="text-center">Premio</th>
+                                    <th scope="col" class="text-center">Fecha de Premiacion</th>
+                                    <th scope="col" class="text-center">Foto</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row" class = "text-center margin-row">2</th>
+                                    <td  class = "text-center">Ferrari</td>
+                                    <td  class = "text-center">06/09/2019</td>
+                                    <td class = "text-center"><img class="img-premio" src="assets/Premio3_rankin.jpg" alt="" ></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class = "text-center margin-row">5</th>
+                                    <td  class = "text-center">Casa</td>
+                                    <td  class = "text-center">30/09/2019</td>
+                                    <td class = "text-center"><img class="img-premio" src="assets/Premio2_rankin.jpg" alt="" ></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class = "text-center margin-row">7</th>
+                                    <td  class = "text-center">Telefono Inteligente</td>
+                                    <td  class = "text-center">28/11/2019</td>
+                                    <td class = "text-center"><img class="img-premio" src="assets/Premio1_rankin.jpg" alt="" ></td>
+                                </tr>
+                                </tbody>
+                        </table>
+                    </div>
             </div>
             <!-- Contenido de la página fin -->
                 

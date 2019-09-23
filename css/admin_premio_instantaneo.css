@@ -1,0 +1,18 @@
+.img-premio{
+    width: 175px;
+    height: 175px;
+}
+.form-categorie{
+    background-color: #10beff73;
+    padding: 1rem;
+    margin-bottom: 5%;
+}
+@media (max-width: 768px) {
+    .img-categorie{
+        width: 45%;
+    }
+    
+}
+.center-table{
+    margin: 5%;
+}
