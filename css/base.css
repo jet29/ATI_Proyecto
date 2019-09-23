@@ -122,7 +122,6 @@ span {
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
 }
 
 #sidebar ul li a {
@@ -149,7 +148,9 @@ a[aria-expanded="true"] {
 a[data-toggle="collapse"] {
     position: relative;
 }
-
+#collapseButton {
+    display: none;
+}
 .dropdown-toggle::after {
     display: block;
     position: absolute;
@@ -251,16 +252,30 @@ a.article:hover {
     #sidebar {
         margin-left: 0;
     }
-    #sidebarCollapse span {
+    .sidebarCollapse span {
         display: none;
     }
+    #collapseButton {
+        display: block;
+    }
+    nav .list-unstyled.components{
+        display: none
+    }
 }
+
 .navbar{
     padding: .0rem 1rem;
 }
 .row {
     margin-right:0px;
+    margin-left:0px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 .top-card{
     margin: 10%;
+}
+nav.active .list-unstyled.components{
+    display: block
 }
