@@ -1,4 +1,4 @@
-{   "_id":"1323",
+var question = [{   "_id":"1323",
     "pregunta":"¿De qué color es el caballo blanco de Simón Bolívar?", 
     "categoria":"Historia",
     "respuesta_1":"Morado","respuesta_1_imagen":"Morado","respuesta_1_buena":false,
@@ -6,4 +6,4 @@
     "respuesta_3":"Blanco","respuesta_3_imagen":"Blanco","respuesta_3_buena":true,
     "respuesta_4":"Marrón","respuesta_4_imagen":"Marrón","respuesta_4_buena":false,
     "puntaje": 100
-}
+}]

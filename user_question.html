@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="./css/main.css"> -->
     <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/user_question.css">
  
  <script src="./public/jquery.js"></script>
     <script src="./public/popper.min.js"></script>
@@ -122,30 +123,46 @@
 
         <div class="containter">
 
-            <form method="GET" action="./question.html">
+            <form method="GET" action="./user_question.html">
     
                 <div class="row justify-content-md-center">
                     <div class="col-md-auto">
-                        <h2>¿Cuál es la capital de Venezuela?</h1>
+                        <h2>¿De qué color es el caballo blanco de Simón Bolívar?</h1>
                     </div>
                 </div>
         
                 <br>
         
-                <div class="row justify-content-md-center">
-                    <button type="submit" class="btn btn-primary">No lo sé</button>
+                <div class="row justify-content-md-center ">
+                        <div class="col-xs container-button">
+                            <div class="">
+                                <button type="button"data-toggle="modal"  class="btn btn-info  button-inside-img btn-lg btn-floating " data-target="#myModal" onclick="popUp(false);" >Morado</button>
+                                <img class="image-button" src="./assets/morado.jpg" alt="">
+
+                            </div>
+                       
+                        </div>
+                        <div class="col-xs container-button">
+                            <div class="">
+                                <button type="button"data-toggle="modal"  class="btn btn-info  button-inside-img btn-lg btn-floating " data-target="#myModal" onclick="popUp(false);" >Verde</button>
+                                <img class="image-button" src="./assets/verde.jpg" alt="">
+
+                            </div>
+                        </div>
                 </div>
-        
-                <br>
-        
-                <div class="row justify-content-md-center">
-                    <button type="submit" class="btn btn-primary">Yo tampoco</button>
-                </div>
-        
-                <br>
-        
-                <div class="row justify-content-md-center">
-                    <button type="submit" class="btn btn-primary">Ambas</button>
+            
+                <div class="row justify-content-md-center ">
+                    <div class="col-xs container-button">
+                        <button type="button"data-toggle="modal"  class="btn btn-info  button-inside-img btn-lg btn-floating" data-target="#myModal" onclick="popUp(true);" >Blanco</button>
+                        <img class="image-button" src="./assets/blanco.jpg" alt="">
+                        
+                    </div>
+
+                    <div class="col-xs container-button">
+                        <button type="button"data-toggle="modal"  class="btn btn-info  button-inside-img btn-lg btn-floating " data-target="#myModal" onclick="popUp(false);" >Marrón</button>
+                        <img class="image-button" src="./assets/marron.jpg" alt="">
+                        
+                    </div>
                 </div>
     
             </form>
@@ -155,10 +172,35 @@
             
     </div>
             
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+        <div class="modal-content">
         
+            <!-- Modal Header -->
+            <div class="modal-header">
+            <h4 id="title" class="modal-title"></h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div id="menssage" class="modal-body">
+                
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+            <!-- <button type="button" action="./user_categories.html" class="btn btn-danger" data-dismiss="modal">Close</button> -->
+            <a href="./user_categories.html" class="btn btn-info" role="button">Volver a Categorías</a>
+            </div>
+            
+        </div>
+        </div>
+    </div>
     </div>
     
      <!-- Script para sidebarcollapse -->
     <script src="./js/main.js"></script>
+    <script src="./js/question.js"></script>
 </body>
 </html>
