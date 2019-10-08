@@ -16,7 +16,8 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
-    <title>TRIVIATI LOGIN</title>
+    <title>TRIVIATI ADMIN
+    </title>
 </head>
 <body>
     <div class="wrapper">
@@ -29,54 +30,69 @@
             </div>
     
             <ul class="list-unstyled components">
-                <li class="active">
-                    <a href="user_categories.html" >
+                <li>
+                    <a href="admin_home.html" >
                         <i class="fas fa-home"></i>
                         Inicio
                     </a>
-                    <!--
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                    
+                </li>
+                <!-- <li>
+                    <a href="#PremioSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-trophy"></i>
+                        Premios
+                    </a>
+                    <ul class="collapse list-unstyled" id="PremioSubmenu">
                         <li>
-                            <a href="#">Home 1</a>
+                            <a href="admin_premio_instantaneo.html">Premio instantáneo</a>
+                        </li>
+                        <li>
+                            <a href="admin_premio_ranking.html">Premio por Ranking</a>
+                        </li>
+                        <li>
+                            <a href="admin_premio_actualizar.html">Actualizar estado de Premios</a>
                         </li>
                     </ul>
-                    -->
-                    
-                </li>
+                    <a href="#TriviaSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-question"></i>
+                        Trivias
+                    </a>
+                    <ul class="collapse list-unstyled" id="TriviaSubmenu">
+                        <li>
+                            <a href="admin_categoria.html">Administrar categorías</a>
+                        </li>
+                        <li>
+                            <a href="admin_question.html">Administrar preguntas</a>
+                        </li>
+                    </ul>
+                    <a href="admin_cuentas.html" >
+                        <i class="fas fa-user-friends"></i>
+                        Adminitrar cuentas
+                    </a>
+                </li> -->
                 <li>
-                    <a href="user_editar_perfil.html">
-                        <i class="fas fa-edit"></i>
-                        Editar Perfil
-                    </a>
-                    <a href="user_reglas.html" >
-                        <i class="fas fa-copy"></i>
-                        Reglas
-                    </a>
-                   
-                    <!-- <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <i class="fas fa-align-left"></i>
-                        <span>Toggle Sidebar</span>
-                    </button> -->
                     <a class="sidebarCollapse" href="#" style="text-align: center;">
-                        <i id="sidebar-icon" class="fas fa-angle-double-left"
-                        ></i>
+                        <i id="sidebar-icon" class="fas fa-angle-double-left"></i>
+            
                     </a>
-                    
+
                 </li>
+                    
             </ul>
     
         </nav>
+        <!-- Fin Sidebar  -->
     
-        <!-- Page Content  -->
         <div id="content">
-
+            <!-- NavBar  -->
             <nav class="navbar navbar-expand-md navbar-dark bg-dark">
                 <button type="button" id="collapseButton" class="btn btn-info sidebarCollapse">
-                        <i class="fas fa-align-left"></i>
+                    <i class="fas fa-align-left"></i>
                 </button>
+               
                 <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-                           
-                    
+                       
+        
                             
                     <ul class="navbar-nav mr-auto">
                     
@@ -91,13 +107,13 @@
                         
 
                         <li class="nav-item">
-                            <p style="color:white; padding-left: 1em; padding-top: 1em;"> NoobMaster69 </p>
+                            <!-- <p style="color:white; padding-left: 1em; padding-top: 1em;"> latinLoverAdmin </p> -->
                         </li>
 
                     </ul>
                 </div>
                 <div class="mx-auto my-2 order-0 order-md-1 position-relative">
-                        <a class="mx-auto" href="user_categories.html">
+                        <a class="mx-auto" href="admin_home.html">
                         <img src="./assets/logo.svg" style="width: 60px; height:auto;">
                     </a>
                     
@@ -106,7 +122,7 @@
                     <ul class="navbar-nav ml-auto">
 
                         <li class="nav-item">
-                            <a class="nav-link" href="user_login.html">Log Out</a>
+                            <a class="nav-link" href="admin_login.html">Login</a>
                         </li>
                         
                     </ul>
@@ -115,17 +131,17 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </nav>
+            <!-- Fin NavBar  -->
 
 
             <!-- Contenido de la pagina -->
-            
             <div class="row">
                 <div class="col-sm-9 ">
                     <div style="text-align: center;">
                         <div class="row justify-content-md-center">
         
                             <div class="col-md-auto">
-                                <h2>Editar perfil de Trivi ATI!</h1>
+                                <h2>¿Olvidó la contraseña?</h1>
                             </div>
                         </div>
                         
@@ -140,27 +156,17 @@
                         <div class="row justify-content-md-center">
                             <form method="GET" action="./home.html" style="margin: auto;">
                                 <div class="form-group">
-                                    <input type="file" name="filename" accept="image/gif, image/jpeg, image/png">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
                                 </div>
-                                <div class="form-group">
-                                    <input type="password" class="form-control" id="inputUsername" placeholder="Nombre de usuario">
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email">
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                                </div>
-
-                                
-                                <button type="submit" class="btn btn-primary">Aceptar</button>
+                                <button type="submit" class="btn btn-primary">Enviar Correo</button>
                             </form>
                         </div>
 
                     </div>
                 </div>
+                
             </div>
-        
+            
             <!-- Contenido de la página fin -->
                 
         </div>
@@ -168,7 +174,8 @@
         
     </div>
     
-    <!-- Script para sidebarcollapse -->
+     <!-- Script para sidebarcollapse -->
     <script src="./js/main.js"></script>
+
 </body>
 </html>
