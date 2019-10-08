@@ -130,17 +130,20 @@
     
                 <div class="row justify-content-md-center">
                     <div class="col-md-auto">
+                        <h2>{{question['question']}}</h1>
                     </div>
                 </div>
         
                 <br>
         
                 <div class="row justify-content-md-center">
+                    <button type="submit" name="answer" value= "{{question['question']}}-0" onclick="solveAnswer(0)" class="btn btn-primary">{{question['answers'][0]}}</button>
                 </div>
         
                 <br>
         
                 <div class="row justify-content-md-center">
+                    <button type="submit" name="answer" value="{{question['question']}}-1" onclick="solveAnswer(1)" class="btn btn-primary">{{question['answers'][1]}}</button>
                 </div>
         
                 <br>
