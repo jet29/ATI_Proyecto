@@ -1,0 +1,15 @@
+.col{
+    margin: auto;
+    padding-left: 0px;
+}
+.form-categorie{
+    background-color: #10beff73;
+    padding: 1rem;
+    margin-bottom: 5%;
+}
+.row{
+    margin-bottom: 1rem;
+}
+.correct-answer{
+    background: #c3e6cb;
+}

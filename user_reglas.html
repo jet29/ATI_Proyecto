@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./css/main.css"> -->
+    <link rel="stylesheet" href="./css/base.css">
+ 
+    <script src="./public/jquery.js"></script>
+    <script src="./public/popper.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    
+    <!-- Font Awesome JS -->
+   <script defer src="./public/solid.js"></script>
+    <script defer src="./public/fontawesome.js"></script>
+
+    <title>TRIVIATI LOGIN</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Trivi ATI</h3>
+                <strong>TATI</strong>
+            </div>
+    
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="user_categories.html" >
+                        <i class="fas fa-home"></i>
+                        Inicio
+                    </a>
+                    <!--
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                    </ul>
+                    -->
+                    
+                </li>
+                <li>
+                    <a href="user_editar_perfil.html">
+                        <i class="fas fa-edit"></i>
+                        Editar Perfil
+                    </a>
+                    <a href="user_reglas.html" >
+                        <i class="fas fa-copy"></i>
+                        Reglas
+                    </a>
+                   
+                    <!-- <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Sidebar</span>
+                    </button> -->
+                    <a class="sidebarCollapse" href="#" style="text-align: center;">
+                        <i id="sidebar-icon" class="fas fa-angle-double-left"
+                        ></i>
+                    </a>
+                    
+                </li>
+            </ul>
+    
+        </nav>
+    
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <button type="button" id="collapseButton" class="btn btn-info sidebarCollapse">
+                        <i class="fas fa-align-left"></i>
+                </button>
+                <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                           
+                    
+                            
+                    <ul class="navbar-nav mr-auto">
+                    
+                        <!-- 
+                        <li class="nav-item">
+                            <a class="nav-link" href="//codeply.com">Codeply</a>
+                        -->
+
+                        <li class="nav-item">
+                            <i style="color:white;" class="fas fa-user"></i>
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <p style="color:white; padding-left: 1em; padding-top: 1em;"> NoobMaster69 </p>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="mx-auto my-2 order-0 order-md-1 position-relative">
+                        <a class="mx-auto" href="user_categories.html">
+                        <img src="./assets/logo.svg" style="width: 60px; height:auto;">
+                    </a>
+                    
+                </div>
+                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="user_login.html">Log Out</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+
+
+            <!-- Contenido de la pagina -->
+            
+            <div class="row">
+                                
+                <div class="col">
+                    <div class="card top-card">
+                        <div class="card-body">
+                            <h3 class="card-title" style="text-align: center">Reglas para jugar Trivi ATI</h3>
+                            <p class="card-text">1.- Si pierdes eres marico.</p>
+                            <p class="card-text">2.- Si ganas eres marico.</p>
+                            <p class="card-text">3.- marico el que lo lea.</p>
+                            <p class="card-text">4.- vas a seguir leyendo?</p>
+                            <p class="card-text">5.- aaaaay mariquito.</p>
+                            
+                            <!-- <a href="#" class="card-link">Ver más...</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contenido de la página fin -->
+                
+        </div>
+            
+        
+    </div>
+    
+     <script type="text/javascript">
+         $(document).ready(function () {
+             $('.sidebarCollapse').on('click', function () {
+                 $('#sidebar').toggleClass('active');
+                 if($('#sidebar-icon').hasClass('fa-angle-double-right'))
+                 {
+                    $('#sidebar-icon').removeClass('fa-angle-double-right');
+                    $('#sidebar-icon').addClass('fa-angle-double-left');
+                 }else{
+                  
+                    $('#sidebar-icon').addClass('fa-angle-double-right');
+                    $('#sidebar-icon').removeClass('fa-angle-double-left');
+                 }
+             });
+         });
+     </script>
+</body>
+</html>
