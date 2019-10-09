@@ -10,7 +10,15 @@ mongo = PyMongo(app)
 @app.route('/')
 def index():
     if 'username' in session:
-        return render_template('user_categories.html')
+
+        users = mongo.db.users
+        login_user = users.find_one({'username' : session['username']})
+
+        if login_user:
+            if login_user['role'] == "user":
+                return render_template('user_categories.html')
+            else:
+                return render_template('admin_home.html')
     
     return render_template('user_login.html')
 
@@ -31,7 +39,11 @@ def login():
     if login_user:
         if request.form['pass'].encode('utf-8') == login_user['password'].encode('utf-8'):
             session['username'] = login_user['username']
-            session['score'] = login_user['score']
+
+            #check if user is admin
+            if login_user['role'] == "user":
+                session['score'] = login_user['score']
+
             return redirect(url_for('index'))
 
     return 'Invalid username/password combination'
@@ -39,7 +51,12 @@ def login():
 @app.route('/user_logout')
 def logout():
     session.pop('username')
-    session.pop('score')
+
+    #check if user logout
+    if 'score' in session:
+        session.pop('score')
+
+
     return redirect(url_for('index'))
 
 
@@ -112,10 +129,6 @@ def admin_accounts():
 def admin_home():
     return render_template('admin_home.html')
 
-@app.route('/admin_login')
-def admin_login():
-    return render_template('admin_login.html')
-
 @app.route('/admin_olvido_contrasenia')
 def admin_forgot_password():
     return render_template('admin_olvido_contrasenia.html')
@@ -126,7 +139,7 @@ def admin_update_prize():
 
 @app.route('/admin_premio_instantaneo')
 def admin_instant_prize():
-    return render_template('admin_premio_instanteo.html')
+    return render_template('admin_premio_instantaneo.html')
 
 @app.route('/admin_premio_ranking')
 def admin_ranking_prize():
